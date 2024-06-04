@@ -20,7 +20,7 @@ def main():
     """
 
     parser = cli.Parser()  # Create a command-line argument parser
-    parser.add_argument('-o', '--output', required=True, help='Path to the output CSV file')
+    parser.add_argument('-O', '--output', required=True, help='Path to the output CSV file')
     args = parser.get_args()  # Parse the command-line arguments
     si = service_instance.connect(args)  # Connect to the vCenter server
 
